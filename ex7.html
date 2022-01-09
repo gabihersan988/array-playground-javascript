@@ -11,13 +11,14 @@
     <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti, dolorem molestiae iusto exercitationem amet quibusdam sunt. Similique minus molestias accusamus, perferendis molestiae libero. Aliquam minima quo corrupti quis totam.</p>
     <script>
         let textoSpan = document.querySelector("#lorem").textContent
-        console.log("Texto antes de transformarlo: ", textoSpan)
+        console.log("Texto antes de transformarlo: ", textoSpan);
         
-        // Tú código aquí: busca una función JavaScript que te permita transformar el texto en 'textoSpan' en mayúsculas; y asignarlo a la variable 'textoMaysuculas'
-        let textoMaysuculas
-        
+        /*Tú código aquí: busca una función JavaScript que te permita transformar el texto en 'textoSpan' en mayúsculas; y asignarlo a 
+        la variable 'textoMaysuculas'*/
+        let textoMaysuculas=textoSpan.toUpperCase();
+        console.log("Texto despues de transformarlo: ", textoMaysuculas);
         // No modificar a partir de aquí
-        document.querySelector("#lorem").textContent = textoMaysuculas
+        document.querySelector("#lorem").textContent = textoMaysuculas;
 
     </script>
 </body>

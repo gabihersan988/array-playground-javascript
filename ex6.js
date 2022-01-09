@@ -3,19 +3,22 @@
  */
 
 function existePez(listaPeces, pezBuscado) {
-    let pezEncontrado = false
+    let pezEncontrado = false;
     let i = 0
 
-    while(!pezEncontrado && i<listapeces.length-1) {
-        pezEncontrado = (listaPeces[i] == pezBuscado) 
-        i++      
+    console.log("pezEncontrado: " + pezEncontrado);
+
+    while(!pezEncontrado && i<= listaPeces.length-1) {
+        pezEncontrado = (listaPeces[i] == pezBuscado);
+        console.log(" while pezEncontrado: " + pezEncontrado); 
+        i++ ;     
     }
 
     return pezEncontrado
 }
 
-let muchos_peces = ["Dory", "Nemo", "Shipho", "Estrella"]
-let he_encontrado_al_pez = existePez(muchos_peces, "Estrella")
+let muchos_peces = ["Dory", "Nemo", "Shipho", "Estrella"];
+let he_encontrado_al_pez = existePez(muchos_peces, "Estrella");
 
 console.log("He encontrado al pez?: " + he_encontrado_al_pez)
 
@@ -27,5 +30,6 @@ console.log("He encontrado al pez?: " + he_encontrado_al_pez)
  * 1. Un error que impide ejecutar el código. Vigila la información que arroja el TERMINAL
  * 2. Un error lógico; que hace que el código no devuelve lo que debería devolver.
  * 
- * Pon "chivatos" en el código para aydarte a averiguar que está sucediendo; o usa el depurador de Visual Studio para ejecutar el código paso a paso
+ * Pon "chivatos" en el código para aydarte a averiguar que está sucediendo; o usa el depurador de 
+ * Visual Studio para ejecutar el código paso a paso
  */

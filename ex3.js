@@ -15,12 +15,15 @@
  */
 
  /**
-  * Ejecuta el siguiente código e intenta averiguar que está sucediendo. CONTESTA A LA PREGUNTA: ¿Porque el úñtimo mensaje dice "Pez siguiente: undefined?"
+  * Ejecuta el siguiente código e intenta averiguar que está sucediendo. CONTESTA A LA PREGUNTA: 
+  * ¿Porque el úñtimo mensaje dice "Pez siguiente: undefined? 
+  * R: se esta evaluando mal el limite del recorrido (for(let i=0; i<=muchos_peces.length; i++))ya que se esta evaluando hasta 4,
+  *  y como la 5ta posicion no esta definida el resultado es "undefined", lo correcto seria: (for(let i=0; i<muchos_peces.length; i++)) "
   */
 
 let muchos_peces = ["Dory", "Nemo", "Shipho", "Estrella"]
 
-for(let i=0; i<=muchos_peces.length; i++) {
+for(let i=0; i<muchos_peces.length; i++) {
     let siguiente_pez = muchos_peces[i]
     console.log("Pez siguiente: " + siguiente_pez)
 }
